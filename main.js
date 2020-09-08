@@ -10,30 +10,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Smooth Scrolling
-$("#navbar a, btn").on("click", function (event) {
-  if (this.hash !== "") {
-    event.preventDefault();
-
-    const hash = this.hash;
-
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top - 100,
-      },
-      800
-    );
-  }
-});
-
-// Hamburger Menu Toggle
-// const hamburger = document.getElementById("nav__hamburger");
-// const navUL = document.getElementById("nav__ul");
-
-// hamburger.addEventListener("click", () => {
-//   navUL.classList.toggle("show");
-// });
-
 const nav = document.getElementById("nav__slide");
 const toggle = document.getElementById("nav__toggle");
 
