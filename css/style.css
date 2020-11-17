@@ -748,6 +748,13 @@ header {
   font-weight: 700;
 }
 
+/* Elfsight App IG */
+.eapps-instagram-feed-title {
+  font-size: 3.5rem;
+  color: #e9a7a7;
+  font-family: "Cardo", serif;
+}
+
 .section-about {
   background-image: linear-gradient(to right bottom, #f7f7f7, #fff);
   display: flex;
