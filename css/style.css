@@ -679,7 +679,7 @@ header {
 .services__items-item .far {
   /* color: #fff; */
   /* border-radius: 50%; */
-  background-image: linear-gradient(to right bottom, #666a6d, #fff);
+  background-image: linear-gradient(to right bottom, #f7f7f7, #fff);
   -webkit-background-clip: text;
   color: transparent;
   padding: 2.25rem;
@@ -753,6 +753,41 @@ header {
   font-size: 3.5rem;
   color: #e9a7a7;
   font-family: "Cardo", serif;
+}
+
+.htyt-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: auto;
+  justify-items: center;
+}
+
+.htyt-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.htyt-item img {
+  width: 100%;
+}
+
+/* HTYT */
+.HTYT {
+  position: relative;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+}
+
+.HTYT img {
+  height: 35rem;
+  display: block;
+  text-align: center;
 }
 
 .section-about {
