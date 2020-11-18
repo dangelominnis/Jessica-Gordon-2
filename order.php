@@ -1,5 +1,8 @@
 <?php
 
+// Set a cross-site cookie for third-party contexts
+setcookie('cookie2', 'value2', ['samesite' => 'None', 'secure' => true]);
+
 $admin_email = 'jessicargordon7@gmail.com';
 define('AMOUNT', 13.99);
 
