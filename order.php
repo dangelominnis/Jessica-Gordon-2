@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: https://www.jessicargordon.com', false);
 $admin_email = 'jessicargordon7@gmail.com';
 define('AMOUNT', 13.99);
 
