@@ -23,23 +23,6 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<!-- Script SameSite -->
-<script>
-  function fetchCookies(requestMethod) {
-    var req = new XMLHttpRequest();
-    req.withCredentials = true;
-    req.responseType = 'json';
-    req.open(requestMethod, "https://samesite-sandbox.glitch.me/cookies.json", true);
-    req.onload  = function() {
-       var jsonResponse = { method: requestMethod, cookies: req.response };
-       window.parent.postMessage(jsonResponse, "https://samesite-sandbox.glitch.me");
-    };
-    req.send(null);
-  }
-  
-  fetchCookies('GET');
-</script>
-
 <body>
   <div id="loader" style="display:none">
     <img src="img/loader.gif" width="250" alt="loader" />
