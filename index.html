@@ -15,14 +15,30 @@
   <title>Jessica R Gordon | Godly Blog & Devotions</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
-  <link href=https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet" />
   <script src="//kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="order.php">
 
   <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
+<!-- Script SameSite -->
+<script>
+  function fetchCookies(requestMethod) {
+    var req = new XMLHttpRequest();
+    req.withCredentials = true;
+    req.responseType = 'json';
+    req.open(requestMethod, "https://samesite-sandbox.glitch.me/cookies.json", true);
+    req.onload  = function() {
+       var jsonResponse = { method: requestMethod, cookies: req.response };
+       window.parent.postMessage(jsonResponse, "https://samesite-sandbox.glitch.me");
+    };
+    req.send(null);
+  }
+  
+  fetchCookies('GET');
+</script>
 
 <body>
   <div id="loader" style="display:none">
